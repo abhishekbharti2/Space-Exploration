@@ -1,0 +1,48 @@
+
+.search-container{
+  background: url('https://c4.wallpaperflare.com/wallpaper/598/220/994/colors-textures-patterns-scales-wallpaper-preview.jpg');
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.item-container{
+  background-color: rgba(0, 0, 0, 0.555);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 1rem;
+}
+.search-title{
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+.search-img{
+  width: 300px;
+  height: auto;
+}
+.search-info{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+.read-more{
+  text-decoration: none;
+  background-color: rgb(77, 77, 77);
+  padding: 2px 7px;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+.read-more:hover{
+  background-color: purple;
+}
