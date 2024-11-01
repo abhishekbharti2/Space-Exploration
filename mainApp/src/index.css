@@ -181,6 +181,10 @@ body {
     transition: margin-left 1.9s;
     order: 5;
   }
+  .link-container>li:nth-child(6) {
+    transition: margin-left 2.2s;
+    order: 6;
+  }
 
   .link-container li a:hover {
     width: 100%;
