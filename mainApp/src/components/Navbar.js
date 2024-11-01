@@ -65,6 +65,10 @@ export default function Navbar(props) {
               <button className="fa fa-search" type='submit' style = {{color: 'white'}} onClick={() =>{props.setData(val)}} ></button>
             </Link>
           </form>
+           <li>
+               <a href='/' className='navbar-link'>
+               Join Us </a>
+           </li>
         </ul>
 
         <label for="checkbox-1" className="label-check" id="label-btn-1">
