@@ -211,7 +211,7 @@ body {
     margin: 10px 0px;
   }
   .link-container::before{
-    content: 'Search In Wikipedia';
+    content: 'Search In VerseEx';
   }
   .search-cont>input{
     width: 200px;
