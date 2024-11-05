@@ -111,10 +111,10 @@
     border-radius: 20px;
   }
   #filter-checkbox:checked ~ .res-filter-bxs {
-    left: 0px;
+    left: 0px; 
   }
   #filter-checkbox:checked ~ .filter-pull-btn {
-    left: 350px;
+    left: 90%;
     transform: rotate(180deg);
   }
 }

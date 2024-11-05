@@ -20,7 +20,7 @@ export default function Footer() {
               All informations are collected from NASA</p>
           </div>
           <div className='footer-div1-el'>
-            <h4 className='footer-headings'>DVELOPER TEAM</h4> <br />
+            <h4 className='footer-headings'>DEVELOPER TEAM</h4> <br />
             <p className='fa'>&#xf0e0; verse@ex.in</p>
             <li><a href="https://bhartiabhi.netlify.app" className='contact-dev'>contact developers</a></li>
           </div>

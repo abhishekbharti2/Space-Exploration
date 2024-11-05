@@ -28,7 +28,7 @@ export default function ContactUs() {
       </div>
       <div className="form-container">
         <div className="form">
-          <form action="submit" className='contact=form'>
+          <form action="submit" className='contact-form'>
             <input type="email" placeholder="Enter Email here" />
             <input type="text" placeholder="Enter your Full Name" />
             <textarea

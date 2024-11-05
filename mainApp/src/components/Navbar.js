@@ -56,20 +56,20 @@ export default function Navbar(props) {
               Contact Us
             </Link>
           </li>
+           <li>
+               <a href='/' className='navbar-link'>
+               Join Us </a>
+           </li>
           <form className="search-cont" onSubmit={(ev) => {ev.preventDefault()}}>
             <input
               type="text"
               onChange={(eve) =>{setVal(eve.target.value)}}
               placeholder='Search'/>
             <Link to='/search'  className = 'navbar-link' id='search-btn' >
-              <button className="fa fa-search" type='submit' style = {{color: 'white'}} onClick={() =>{props.setData(val)}} ></button>
+              <button className="fa fa-search" type='submit' style = {{color: 'white', cursor:'pointer'}} onClick={() =>{props.setData(val)}} ></button>
             </Link>
           </form>
-           <li>
-               <a href='/' className='navbar-link'>
-               Join Us </a>
-           </li>
-        </ul>
+        </ul> 
 
         <label for="checkbox-1" className="label-check" id="label-btn-1">
           &#9776;

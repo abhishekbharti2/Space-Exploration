@@ -181,7 +181,7 @@ body {
     transition: margin-left 1.9s;
     order: 5;
   }
-  .link-container>li:nth-child(6) {
+  .link-container>li:nth-child(5) {
     transition: margin-left 2.2s;
     order: 6;
   }
