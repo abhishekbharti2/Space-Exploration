@@ -9,23 +9,23 @@ export default function Docs() {
   const [idnumber, setid] = useState(data[0].id);
   const [loading, setLoading] = useState(true);
 
-  function speakNow(){
+  function speakNow() {
     speechSynthesis.cancel();
     const msg = new SpeechSynthesisUtterance(info);
     msg.lang = 'hi-IN';
     speechSynthesis.speak(msg);
   }
-  
-useEffect(() =>{
-  document.getElementById('main-image').addEventListener('load', () => {
-    console.log('Image Loaded');
-    setLoading(false);
-  })
-}, []);
 
- function changeNext(){
+  useEffect(() => {
+    document.getElementById('main-image').addEventListener('load', () => {
+      console.log('Image Loaded');
+      setLoading(false);
+    })
+  }, []);
+
+  function changeNext() {
     data.forEach((element) => {
-      if (element.id === idnumber+1) {
+      if (element.id === idnumber + 1) {
         setTitle(element.name);
         setinfo(element.information);
         setimage(element.image_link);
@@ -34,10 +34,10 @@ useEffect(() =>{
         return;
       }
     })
-   }
-   function changePrev(){
+  }
+  function changePrev() {
     data.forEach((element) => {
-      if (element.id === idnumber-1) {
+      if (element.id === idnumber - 1) {
         setTitle(element.name);
         setinfo(element.information);
         setimage(element.image_link);
@@ -46,46 +46,15 @@ useEffect(() =>{
         return;
       }
     });
-   }
-  
-  useEffect(() => {
-    const navlink = document.querySelectorAll('.doc-link-btn');
-    navlink.forEach((ClickedButton) => {
-      ClickedButton.addEventListener('click', () => {
-        let linking = ClickedButton.innerHTML;
-        setTitle(linking);
-        setinfo('Loading.. please wait');
-        data.forEach((element) => {
-          if (element.name === linking) {
-            setinfo(element.information);
-            setimage(element.image_link);
-            setid(element.id);
-            setLoading(true);
-          }
-        });
-      });
-    });
-    
-    return () => {
-      navlink.forEach((ClickedButton) => {
-        ClickedButton.removeEventListener('click', () => {});
-      });
-    };
-  }, []);
+  }
 
   return (
     <div className="doc-container">
-      <input type="checkbox" id="checkbox-2" className="check-boxes" />
-      <div className="doc-menu">
-        <label for="checkbox-2" className="check-pull-btn">
-        </label>
-        <h3>DOCUMENTATION MENU</h3>
-        {data.map((element) => (
-          <button key={element.id} className="doc-link-btn">
-            {element.name}
-          </button>
-          
-        ))}
+      <div className='starConainer'>
+        <div class="starsec"></div>
+        <div class="starthird"></div>
+        <div class="starfourth"></div>
+        <div class="starfifth"></div>
       </div>
       <div className="info-container">
         <div className="info-left">
@@ -93,20 +62,20 @@ useEffect(() =>{
           <p className="info-paragraph">
             {info}
             <div>
-              <button className = 'head-button learn-more'>Learn More</button>
-              <button className='head-button learn-more' onClick={speakNow}>&#128266; Listen</button>
+              <a className='head-button learn-more' href={`https://en.wikipedia.org/wiki/${infotitle}`} 
+              target='_blank' rel='noreferrer' onClick={()=>{alert("You're redirecting to Wikipedia")}} >Learn More</a>
+              <button className='explore-btn learn-more' onClick={speakNow}>&#128266;</button>
             </div>
           </p>
-          <label for="checkbox-2" className='explore-btn' >Explore All</label>
         </div>
         <div className="info-right">
           <img src={bgimage} className="topic-image" alt="this is topic" id='main-image' />
-        {
-           loading && <div id="spinner">
+          {
+            loading && <div id="spinner">
               <span></span>
               Loading Image
-             </div>
-        }
+            </div>
+          }
           <div className="next-prev">
             <button onClick={changePrev}>&#10094; Prev</button>
             <span>{idnumber}</span>

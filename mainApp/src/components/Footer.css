@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   width: auto;
+  z-index: 9;
 }
 
 .footer-div-1 {
