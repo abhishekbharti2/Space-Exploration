@@ -195,7 +195,7 @@
 .info-container {
   display: flex;
   width: 100%;
-  height: max-content;
+  height: 100%;
   flex-direction: row;
 } 
 
