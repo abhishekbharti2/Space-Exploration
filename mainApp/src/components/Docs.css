@@ -301,7 +301,10 @@
   color: black;
 }
 @media (max-width: 1000px) {
-
+   .doc-container{
+     height: max-content;
+     padding: 20px 0px;
+   }
   .info-container {
     flex-direction: column;
   }
