@@ -70,6 +70,7 @@ export default function Docs() {
         </div>
         <div className="info-right">
           <img src={bgimage} className="topic-image" alt="this is topic" id='main-image' />
+          
           {
             loading && <div id="spinner">
               <span></span>

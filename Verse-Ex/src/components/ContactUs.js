@@ -24,7 +24,7 @@ export default function ContactUs() {
           <i className="fa fa-envelope"></i>
           <h4>Email</h4>
           <p>verse@ex.in</p>
-        </div>
+        </div> 
       </div>
       <div className="form-container">
         <div className="form">

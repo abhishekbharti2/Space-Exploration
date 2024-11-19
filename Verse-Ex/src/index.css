@@ -41,23 +41,25 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(22, 22, 22);
-  border-bottom: 1px solid black;
   z-index: 10;
   padding: 15px 0px;
+  transition: all .5s;
+}
+.scrolled{
+  background-color: rgb(22, 22, 22);
 }
 
 .just-space{
-  background-color: red;
+  background-color: rgb(7, 0, 36);
   padding: 18px;
-  opacity: 0;
+  color: rgb(7, 0, 36);
 }
 .check-boxes {
   display: none;
 }
 
 .link-container {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -80,19 +82,23 @@ body {
   width: 100px;
   height: 25px;
   outline: none;
-  border: 1px solid rgb(160, 160, 160);
-  background-color: rgb(53, 53, 53);
+  border: 1px solid rgb(126, 126, 126);
+  background-color: rgb(0, 0, 0);
   padding: 5px 15px;
+  border-radius: 10px 0px 0px 10px;
 }
 #search-btn{
-  background-color: var(--web-color);
-  padding: 9px;
   text-decoration: none;
-  border: 1px solid black;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 #search-btn>button{
- background-color: transparent;
+ padding: 9px;
+ border-radius: 0px 10px 10px 0px;
+ background-color: var(--web-color);
  border: none;
+ border-bottom: 3px solid var(--web-color);
  outline: none;
 }
 .navbar-link:hover {
@@ -135,7 +141,7 @@ body {
 
   .link-container {
     display: flex;
-    right: -100%;
+    right: -200%;
     justify-content: flex-start;
     width: fit-content;
     text-align: center;

@@ -2,11 +2,11 @@
   background: linear-gradient(90deg, rgb(0, 85, 67), rgb(87, 0, 128));
   margin: 0;
   width: 100%;
-  height: max-content;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  padding: 7% 0%;
+  padding-top: 20vh;
   gap: 20px;
 }
 
@@ -127,6 +127,6 @@
   }
   .form-container>div {
     height: 50%;
-    width: 100%;
+    width: 100%; 
   }
 }

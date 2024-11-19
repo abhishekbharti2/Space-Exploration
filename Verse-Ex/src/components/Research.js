@@ -5,6 +5,7 @@ import data from '../DataSet/ResData.json';
 export default function Research() {
   return (
     <div className="research-container">
+      <h1 className='just-space'>-</h1>
       <section className="research-sec-1">
         <input type="checkbox" id="filter-checkbox" />
         <label for="filter-checkbox" className="filter-pull-btn">

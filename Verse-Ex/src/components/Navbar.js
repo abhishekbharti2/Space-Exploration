@@ -24,9 +24,27 @@ export default function Navbar(props) {
     };
   }, []);
 
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 5) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <nav className="nav-container">
+      <nav className={`nav-container ${scrolled ? "scrolled": ""}`}>
         <input type="checkbox" id="checkbox-1" className="check-boxes" />
 
         <div className="site-title">
@@ -78,7 +96,6 @@ export default function Navbar(props) {
           &#10005;
         </label>
       </nav>
-      <h1 className="just-space">-</h1>
       <div id="loading-page">
         <i className="fa fa-rocket" id="rocket-icon"></i>
         <div className="rocket-tail"></div>
