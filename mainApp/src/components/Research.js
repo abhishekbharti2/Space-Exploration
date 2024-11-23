@@ -26,7 +26,7 @@ export default function Research() {
           {data.map((mission) => (
             <div className="res-cards" key={mission.id}>
               <img src={mission.image} className="res-card-img" alt="" />
-              <a className="res-card-title" href="/">
+              <a className="res-card-title" href={`https://en.wikipedia.org/wiki/`+ mission.name}>
                 {mission.name}
               </a>
               <p className="res-card-info">{mission.information}</p>
