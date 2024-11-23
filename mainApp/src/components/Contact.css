@@ -68,8 +68,11 @@
   width: 80%;
 }
 
-.contact-form button [type='submit'] {
+.contact-form>button{
   color: rgb(0, 0, 0);
+  outline: none;
+  border: none;
+  width: 80%;
   background-color: white;
   height: 40px;
   border-radius: 15px;
