@@ -33,12 +33,9 @@ export default function ContactUs() {
             <input type="email" placeholder="Enter Email here" name ="Email Id"/>
             <input type="text" placeholder="Enter your Full Name" name="Full Name" />
             <textarea
-              name="message"
-              id=""
-              placeholder="Enter Message here"
               name="Message"
-            ></textarea>
-            <button type="submit"> Submit</button>
+              placeholder="Enter Message here"></textarea>
+              <button type="submit"> Submit</button>
           </form>
         </div>
         <div className="about">
