@@ -29,7 +29,7 @@ export default function ContactUs() {
       <div className="form-container">
         <div className="form">
           <form action="https://api.web3forms.com/submit" className='contact-form' method="POST">
-    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE"/>
             <input type="email" placeholder="Enter Email here" name ="Email Id"/>
             <input type="text" placeholder="Enter your Full Name" name="Full Name" />
             <textarea
