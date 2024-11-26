@@ -14,23 +14,30 @@ export default function Career() {
       const userMessage = { text: userInput, sender: "user" };
       setMessages([...messages, userMessage]);
 
-      // Show "waiting" message from the bot
+    
       setIsWaiting(true);
       setMessages((prevMessages) => [
         ...prevMessages,
-        { text: "You will be answered soon...", sender: "bot" },
+        { text: "Thankyou for your response!", sender: "bot" },
       ]);
 
-      // Simulate a delay for the bot response
+  
       setTimeout(() => {
-        const botResponse = { text: "Thank you for your message! How else can I assist you?", sender: "bot" };
+        const botResponse = { text: "Your message has been sent to experts, You'll be answered soon...", sender: "bot" };
         setMessages((prevMessages) => [
           ...prevMessages,
           botResponse,
         ]);
-        setIsWaiting(false); // Stop the waiting state
-      }, 2000); // 2 seconds delay before bot replies
-      setUserInput(""); // Clear input field
+      }, 1500);
+      setTimeout(() => {
+        const botResponse = { text: "How else can I help you ?", sender: "bot" };
+        setMessages((prevMessages) => [
+          ...prevMessages,
+          botResponse,
+        ]);
+        setIsWaiting(false);
+      }, 3000);
+      setUserInput("");
     }
   };
 
