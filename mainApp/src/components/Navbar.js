@@ -75,8 +75,9 @@ export default function Navbar(props) {
             </Link>
           </li>
            <li>
-               <a href='/' className='navbar-link'>
-               Join Us </a>
+              <Link to="Career" className="navbar-link">
+              Career
+              </Link>
            </li>
           <form className="search-cont" onSubmit={(ev) => {ev.preventDefault()}}>
             <input
