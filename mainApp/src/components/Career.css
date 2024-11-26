@@ -10,17 +10,12 @@
     width: 50%;
 }
   .chat-window {
-    background-color: #5e5e5e;
-    border-radius: 10px;
     width: 90%;
     height: 500px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: url('https://1.bp.blogspot.com/-Jfwh6UT-BuY/XXkY_1iVyGI/AAAAAAAAAHI/IZrhbbIN__AqYy0nsZ5O14-oE7CJJF0ZwCLcBGAsYHQ/s1600/astronomy.jpg');
-    background-size: max(120%, 1000px);
-    background-position: center;
-
+    
   }
   
   .messages {
@@ -53,6 +48,7 @@
     border-top: 1px solid #eee;
     padding: 10px;
     background-color: #2d2d2d;
+    border-radius: 10px;
   }
   
   .input-area input {
@@ -232,6 +228,7 @@
     color: #ffffff;
     margin-bottom: 10px;
     cursor: pointer;
+    width: auto;
   }
   
   /* Step Description */
@@ -272,6 +269,6 @@
       font-size: medium;
     }
     .roadmap-step{
-      width: 95%;
+      width: 92%;
     }
   }

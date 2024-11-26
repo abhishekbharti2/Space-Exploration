@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Road from '../DataSet/RoadMap.json';
 import './Career.css';
 
-const Career = () => {
+export default function Career() {
   const [messages, setMessages] = useState([
     { text: "Hello! How can I assist you today?", sender: "bot" }
   ]);
@@ -30,7 +30,6 @@ const Career = () => {
         ]);
         setIsWaiting(false); // Stop the waiting state
       }, 2000); // 2 seconds delay before bot replies
-
       setUserInput(""); // Clear input field
     }
   };
@@ -49,15 +48,15 @@ const Career = () => {
         </div>
       </div>
       <div className="chatbot-container">
-        <div className="chat-window">
-          <div className="messages">
+        <div className="chat-window" >
+          <div className="messages" id='chat-win'>
             {messages.map((msg, index) => (
               <div key={index} className={`message ${msg.sender}`}>
                 <span>{msg.text}</span>
               </div>
             ))}
           </div>
-          <div className="input-area">
+          <form className="input-area">
             <input
               type="text"
               value={userInput}
@@ -65,12 +64,10 @@ const Career = () => {
               placeholder="Type your message..."
               disabled={isWaiting}
             />
-            <button onClick={handleSend} disabled={isWaiting}>Send</button>
-          </div>
+            <button onClick={handleSend} type='submit' disabled={isWaiting}>Send</button>
+          </form>
         </div>
       </div>
     </div>
   );
 };
-
-export default Career;
