@@ -61,7 +61,7 @@ export default function Navbar(props) {
           </li>
           <li>
             <Link to="Objects" className="navbar-link">
-              Objects
+              Learn
             </Link>
           </li>
           <li>
@@ -69,16 +69,16 @@ export default function Navbar(props) {
               Research
             </Link>
           </li>
-          <li>
-            <Link to="/askus" className="navbar-link">
-              Contact Us
-            </Link>
-          </li>
            <li>
               <Link to="Career" className="navbar-link">
               Career
               </Link>
            </li>
+          <li>
+            <Link to="/askus" className="navbar-link">
+              Contact Us
+            </Link>
+          </li>
           <form className="search-cont" onSubmit={(ev) => {ev.preventDefault()}}>
             <input
               type="text"
