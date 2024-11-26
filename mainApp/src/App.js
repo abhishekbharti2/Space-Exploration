@@ -7,6 +7,7 @@ import Footer from './components/Footer.js';
 import ContactUs from './components/ContactUs.js';
 import Research from './components/Research.js';
 import Search from './components/Search.js';
+import Career from './components/Career.js'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         />
         <Route path="/Research" element={<Research />} />
         <Route path="/askus" element={<ContactUs />} />
+        <Route path="/Career" element={<Career/>} />
         <Route path="/search" element={<Search getData = {getData} setData ={setData} />} />
       </Routes>
       <Footer />
