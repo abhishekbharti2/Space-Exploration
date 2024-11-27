@@ -61,7 +61,7 @@ export default function Navbar(props) {
           </li>
           <li>
             <Link to="Objects" className="navbar-link">
-              Learn
+              Celestial Objects
             </Link>
           </li>
           <li>
@@ -71,7 +71,7 @@ export default function Navbar(props) {
           </li>
            <li>
               <Link to="Career" className="navbar-link">
-              Career
+              ChatBot AI
               </Link>
            </li>
           <li>
